@@ -21,8 +21,8 @@ const burger = ({ burgerIngredientsList }) => {
 };
 
 burger.propTypes = {
-  burgerIngredientsList: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string])
+  burgerIngredientsList: PropTypes.objectOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
   ).isRequired
 };
 
